@@ -114,12 +114,17 @@ Gui, Own: Tab
 Gui, Own: Add, Text, x0 y360 w620 h2 +0x10
 Gui, Own: Add, GroupBox, x6 y359 w124 h60
 Gui, Own: Add, Button, x8 y392 w119 h23, Удалить настройки
-Gui, Own: Add, Button, x496 y368 w120 h46 gStartApp, Запустить
 Gui, Own: Add, Button, x8 y368 w119 h23 gAllSave, Сохранить настройки
 
 Gui, Own: Add, GroupBox, x136 y360 w101 h59 +Center
 Gui, Own: Add, DropDownList, x146 y371 w83 vProfileNumber gProfileSetting, %ProfilePosled%
 Gui, Own: Add, DropDownList, x146 y394 w83 vProfileFaction gFactionSetting, %PosledFaction%
+
+Gui, Own: Add, GroupBox, x243 y360 w101 h59
+Gui, Own: Add, Button, x248 y392 w91 h23 gINFO, INFO
+Gui, Own: Add, Button, x248 y368 w91 h23 gFAQ, FAQ
+
+Gui, Own: Add, Button, x496 y368 w120 h46 gStartApp, Запустить
 
 Gui, Own: Show, w620 h420, PlayerTools by Notoriuz
 Return
@@ -127,6 +132,28 @@ Return
 OwnGuiEscape:
 OwnGuiClose:
     ExitApp
+Return
+
+INFO:
+Gui, Own: Hide
+Gui, info: Add, Text, x24 y8 w330 +Center, Биндер для игроков GTA 5RP. Скрипт находится в разработке. В случае обнаружения багов - свяжитесь с разработчиком.
+Gui, info: Add, Text, x0 y40 w620 h2 +0x10
+
+Gui, info: Add, Text, x16 y48 w128 h23 +0x200, Дискорд разработчика - 
+Gui, info: Add, Edit, x152 y50 w120 h21 +ReadOnly, РазраБотчик#1387
+
+Gui, info: Add, Link, x282 y51 w105 h25, <a href="https://discord.gg/EgWe3wZXkV">Дискорд сервер</a>
+
+Gui, info: Show, w380 h80, INFO
+Return
+infoGuiEscape:
+infoGuiClose:
+Gui, info: Destroy
+Gui, Own: Show
+Return
+
+FAQ:
+MsgBox,, FAQ, В разработке
 Return
 
 SettOtigrovka1:
