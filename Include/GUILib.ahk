@@ -1,6 +1,13 @@
 ﻿Return
 
 OwnStart:
+
+IniRead, ProfileNumber, %A_ScriptDir%/VarChoise.ini, Setup, ProfileNumber, Профиль 1
+IniRead, ProfilePosled, %A_ScriptDir%/VarChoise.ini, Setup, ProfilePosled, Профиль 1||Профиль 2|Профиль 3
+
+IniRead, ProfileFaction, %A_ScriptDir%/VarChoise.ini, Setup, ProfileFaction, %A_Space%
+IniRead, PosledFaction, %A_ScriptDir%/VarChoise.ini, Setup, PosledFaction, GOV||ARMY|EMS|LSPD|LSSD|FIB|Weazel News|SASPA
+
 Gui, Own: Add, Tab, x0 y0 w637 h444, Комбинации|Командная отыгровка|Настройки
 Gui, Own: Tab, 1
 Gui, Own: Add, GroupBox, x4 y22 w120 h333 +Center, Комбинация
@@ -111,7 +118,7 @@ Gui, Own: Add, Button, x496 y368 w120 h46 gStartApp, Запустить
 Gui, Own: Add, Button, x8 y368 w119 h23 gAllSave, Сохранить настройки
 
 Gui, Own: Add, GroupBox, x136 y360 w101 h59 +Center
-Gui, Own: Add, DropDownList, x146 y371 w83 vProfileNumber gAllReadFile, %ProfilePosled%
+Gui, Own: Add, DropDownList, x146 y371 w83 vProfileNumber gProfileSetting, %ProfilePosled%
 Gui, Own: Add, DropDownList, x146 y394 w83 vProfileFaction gFactionSetting, %PosledFaction%
 
 Gui, Own: Show, w620 h420, PlayerTools by Notoriuz
