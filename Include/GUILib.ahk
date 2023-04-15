@@ -109,6 +109,9 @@ Gui, Own: Add, Hotkey, x128 y32 w78 h21 vHotKeyStop, %HotKeyStop%
 Gui, Own: Add, GroupBox, x230 y20 w220 h40
 Gui, Own: Add, Checkbox, x236 y30 h23 vCheck1 Checked%Check1%, Отображать подсказки
 Gui, Own: Add, Button, x380 y31 h23 gPeremove2, Настроить
+
+Gui, Own: Add, Button, x8 y330 w119 h28 gCompSettings, Компилировать настройки
+Gui, Own: Add, Button, x128 y330 w119 h28 gUnCompSettings, Распаковать настройки
 Gui, Own: Tab
 
 Gui, Own: Add, Text, x0 y360 w620 h2 +0x10

@@ -13,9 +13,9 @@ Loop
     {
         KeySounter1 := KeySounter1 + 1
         KeySounter2 := KeySounter2 + 1
-    IniRead, Otigrovka%KeySounter%Text%KeySounter2%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile1\setting_1tab.ini, Setup, Otigrovka%KeySounter%Text%KeySounter2%, %A_Space%
-    IniRead, Otigrovka%KeySounter%Wait%KeySounter2%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile1\setting_1tab.ini, Setup, Otigrovka%KeySounter%Wait%KeySounter2%, 1400
-    IniRead, Otigrovka%KeySounter%SendType%KeySounter2%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile1\setting_1tab.ini, Setup, Otigrovka%KeySounter%SendType%KeySounter2%, %A_Space%
+    IniRead, Otigrovka%KeySounter%Text%KeySounter2%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile1\setting_1tab.ini, Otigrovka%KeySounter%, Otigrovka%KeySounter%Text%KeySounter2%, %A_Space%
+    IniRead, Otigrovka%KeySounter%Wait%KeySounter2%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile1\setting_1tab.ini, Otigrovka%KeySounter%, Otigrovka%KeySounter%Wait%KeySounter2%, 1400
+    IniRead, Otigrovka%KeySounter%SendType%KeySounter2%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile1\setting_1tab.ini, Otigrovka%KeySounter%, Otigrovka%KeySounter%SendType%KeySounter2%, %A_Space%
     if KeySounter1 = 10
         {
             KeySounter := KeySounter + 1 
@@ -31,7 +31,6 @@ Loop
         Break
         }
     }
-
 Loop, 13
     {
     IniRead, OwnHotKey%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile1\setting.ini, Setup, OwnHotKey%A_index%, %A_Space%
@@ -67,9 +66,9 @@ Loop
     {
         KeySounter1 := KeySounter1 + 1
         KeySounter2 := KeySounter2 + 1
-    IniRead, Otigrovka%KeySounter%Text%KeySounter2%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile2\setting_1tab.ini, Setup, Otigrovka%KeySounter%Text%KeySounter2%, %A_Space%
-    IniRead, Otigrovka%KeySounter%Wait%KeySounter2%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile2\setting_1tab.ini, Setup, Otigrovka%KeySounter%Wait%KeySounter2%, 1400
-    IniRead, Otigrovka%KeySounter%SendType%KeySounter2%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile2\setting_1tab.ini, Setup, Otigrovka%KeySounter%SendType%KeySounter2%, %A_Space%
+    IniRead, Otigrovka%KeySounter%Text%KeySounter2%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile2\setting_1tab.ini, Otigrovka%KeySounter%, Otigrovka%KeySounter%Text%KeySounter2%, %A_Space%
+    IniRead, Otigrovka%KeySounter%Wait%KeySounter2%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile2\setting_1tab.ini, Otigrovka%KeySounter%, Otigrovka%KeySounter%Wait%KeySounter2%, 1400
+    IniRead, Otigrovka%KeySounter%SendType%KeySounter2%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile2\setting_1tab.ini, Otigrovka%KeySounter%, Otigrovka%KeySounter%SendType%KeySounter2%, %A_Space%
     if KeySounter1 = 10
         {
             KeySounter := KeySounter + 1 
@@ -120,9 +119,9 @@ Loop
     {
         KeySounter1 := KeySounter1 + 1
         KeySounter2 := KeySounter2 + 1
-    IniRead, Otigrovka%KeySounter%Text%KeySounter2%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile3\setting_1tab.ini, Setup, Otigrovka%KeySounter%Text%KeySounter2%, %A_Space%
-    IniRead, Otigrovka%KeySounter%Wait%KeySounter2%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile3\setting_1tab.ini, Setup, Otigrovka%KeySounter%Wait%KeySounter2%, 1400
-    IniRead, Otigrovka%KeySounter%SendType%KeySounter2%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile3\setting_1tab.ini, Setup, Otigrovka%KeySounter%SendType%KeySounter2%, %A_Space%
+    IniRead, Otigrovka%KeySounter%Text%KeySounter2%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile3\setting_1tab.ini, Otigrovka%KeySounter%, Otigrovka%KeySounter%Text%KeySounter2%, %A_Space%
+    IniRead, Otigrovka%KeySounter%Wait%KeySounter2%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile3\setting_1tab.ini, Otigrovka%KeySounter%, Otigrovka%KeySounter%Wait%KeySounter2%, 1400
+    IniRead, Otigrovka%KeySounter%SendType%KeySounter2%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile3\setting_1tab.ini, Otigrovka%KeySounter%, Otigrovka%KeySounter%SendType%KeySounter2%, %A_Space%
     if KeySounter1 = 10
         {
             KeySounter := KeySounter + 1 
@@ -279,27 +278,27 @@ if ProfileNumber = Профиль 1
     {
     Loop, 10
         {
-    IniWrite, % Otigrovka1Text%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile1\setting_1tab.ini, Setup, Otigrovka1Text%A_index%
-    IniWrite, % Otigrovka1Wait%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile1\setting_1tab.ini, Setup, Otigrovka1Wait%A_index%
-    IniWrite, % Otigrovka1SendType%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile1\setting_1tab.ini, Setup, Otigrovka1SendType%A_index%
+    IniWrite, % Otigrovka1Text%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile1\setting_1tab.ini, Otigrovka1, Otigrovka1Text%A_index%
+    IniWrite, % Otigrovka1Wait%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile1\setting_1tab.ini, Otigrovka1, Otigrovka1Wait%A_index%
+    IniWrite, % Otigrovka1SendType%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile1\setting_1tab.ini, Otigrovka1, Otigrovka1SendType%A_index%
         }
     }
 if ProfileNumber = Профиль 2
     {
     Loop, 10
         {
-    IniWrite, % Otigrovka1Text%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile2\setting_1tab.ini, Setup, Otigrovka1Text%A_index%
-    IniWrite, % Otigrovka1Wait%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile2\setting_1tab.ini, Setup, Otigrovka1Wait%A_index%
-    IniWrite, % Otigrovka1SendType%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile2\setting_1tab.ini, Setup, Otigrovka1SendType%A_index%
+    IniWrite, % Otigrovka1Text%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile2\setting_1tab.ini, Otigrovka1, Otigrovka1Text%A_index%
+    IniWrite, % Otigrovka1Wait%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile2\setting_1tab.ini, Otigrovka1, Otigrovka1Wait%A_index%
+    IniWrite, % Otigrovka1SendType%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile2\setting_1tab.ini, Otigrovka1, Otigrovka1SendType%A_index%
         }
     }
 if ProfileNumber = Профиль 3
     {
     Loop, 10
         {
-    IniWrite, % Otigrovka1Text%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile3\setting_1tab.ini, Setup, Otigrovka1Text%A_index%
-    IniWrite, % Otigrovka1Wait%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile3\setting_1tab.ini, Setup, Otigrovka1Wait%A_index%
-    IniWrite, % Otigrovka1SendType%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile3\setting_1tab.ini, Setup, Otigrovka1SendType%A_index%
+    IniWrite, % Otigrovka1Text%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile3\setting_1tab.ini, Otigrovka1, Otigrovka1Text%A_index%
+    IniWrite, % Otigrovka1Wait%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile3\setting_1tab.ini, Otigrovka1, Otigrovka1Wait%A_index%
+    IniWrite, % Otigrovka1SendType%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile3\setting_1tab.ini, Otigrovka1, Otigrovka1SendType%A_index%
         }
     }
 Gui, Otigrovka1: Destroy
@@ -312,27 +311,27 @@ if ProfileNumber = Профиль 1
     {
 Loop, 10
     {
-IniWrite, % Otigrovka2Text%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile1\setting_1tab.ini, Setup, Otigrovka2Text%A_index%
-IniWrite, % Otigrovka2Wait%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile1\setting_1tab.ini, Setup, Otigrovka2Wait%A_index%
-IniWrite, % Otigrovka2SendType%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile1\setting_1tab.ini, Setup, Otigrovka2SendType%A_index%
+IniWrite, % Otigrovka2Text%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile1\setting_1tab.ini, Otigrovka2, Otigrovka2Text%A_index%
+IniWrite, % Otigrovka2Wait%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile1\setting_1tab.ini, Otigrovka2, Otigrovka2Wait%A_index%
+IniWrite, % Otigrovka2SendType%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile1\setting_1tab.ini, Otigrovka2, Otigrovka2SendType%A_index%
     }
 }
     if ProfileNumber = Профиль 2
         {
     Loop, 10
         {
-    IniWrite, % Otigrovka2Text%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile2\setting_1tab.ini, Setup, Otigrovka2Text%A_index%
-    IniWrite, % Otigrovka2Wait%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile2\setting_1tab.ini, Setup, Otigrovka2Wait%A_index%
-    IniWrite, % Otigrovka2SendType%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile2\setting_1tab.ini, Setup, Otigrovka2SendType%A_index%
+    IniWrite, % Otigrovka2Text%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile2\setting_1tab.ini, Otigrovka2, Otigrovka2Text%A_index%
+    IniWrite, % Otigrovka2Wait%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile2\setting_1tab.ini, Otigrovka2, Otigrovka2Wait%A_index%
+    IniWrite, % Otigrovka2SendType%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile2\setting_1tab.ini, Otigrovka2, Otigrovka2SendType%A_index%
         }
     }
         if ProfileNumber = Профиль 3
             {
         Loop, 10
             {
-        IniWrite, % Otigrovka2Text%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile3\setting_1tab.ini, Setup, Otigrovka2Text%A_index%
-        IniWrite, % Otigrovka2Wait%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile3\setting_1tab.ini, Setup, Otigrovka2Wait%A_index%
-        IniWrite, % Otigrovka2SendType%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile3\setting_1tab.ini, Setup, Otigrovka2SendType%A_index%
+        IniWrite, % Otigrovka2Text%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile3\setting_1tab.ini, Otigrovka2, Otigrovka2Text%A_index%
+        IniWrite, % Otigrovka2Wait%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile3\setting_1tab.ini, Otigrovka2, Otigrovka2Wait%A_index%
+        IniWrite, % Otigrovka2SendType%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile3\setting_1tab.ini, Otigrovka2, Otigrovka2SendType%A_index%
             }
     }
     Gui, Otigrovka2: Destroy
@@ -345,27 +344,27 @@ if ProfileNumber = Профиль 1
     {
 Loop, 10
     {
-IniWrite, % Otigrovka3Text%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile1\setting_1tab.ini, Setup, Otigrovka3Text%A_index%
-IniWrite, % Otigrovka3Wait%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile1\setting_1tab.ini, Setup, Otigrovka3Wait%A_index%
-IniWrite, % Otigrovka3SendType%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile1\setting_1tab.ini, Setup, Otigrovka3SendType%A_index%
+IniWrite, % Otigrovka3Text%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile1\setting_1tab.ini, Otigrovka3, Otigrovka3Text%A_index%
+IniWrite, % Otigrovka3Wait%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile1\setting_1tab.ini, Otigrovka3, Otigrovka3Wait%A_index%
+IniWrite, % Otigrovka3SendType%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile1\setting_1tab.ini, Otigrovka3, Otigrovka3SendType%A_index%
     }
 }
 if ProfileNumber = Профиль 2
     {
 Loop, 10
     {
-IniWrite, % Otigrovka3Text%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile2\setting_1tab.ini, Setup, Otigrovka3Text%A_index%
-IniWrite, % Otigrovka3Wait%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile2\setting_1tab.ini, Setup, Otigrovka3Wait%A_index%
-IniWrite, % Otigrovka3SendType%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile2\setting_1tab.ini, Setup, Otigrovka3SendType%A_index%
+IniWrite, % Otigrovka3Text%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile2\setting_1tab.ini, Otigrovka3, Otigrovka3Text%A_index%
+IniWrite, % Otigrovka3Wait%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile2\setting_1tab.ini, Otigrovka3, Otigrovka3Wait%A_index%
+IniWrite, % Otigrovka3SendType%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile2\setting_1tab.ini, Otigrovka3, Otigrovka3SendType%A_index%
     }
 }
 if ProfileNumber = Профиль 3
     {
 Loop, 10
     {
-IniWrite, % Otigrovka3Text%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile3\setting_1tab.ini, Setup, Otigrovka3Text%A_index%
-IniWrite, % Otigrovka3Wait%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile3\setting_1tab.ini, Setup, Otigrovka3Wait%A_index%
-IniWrite, % Otigrovka3SendType%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile3\setting_1tab.ini, Setup, Otigrovka3SendType%A_index%
+IniWrite, % Otigrovka3Text%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile3\setting_1tab.ini, Otigrovka3, Otigrovka3Text%A_index%
+IniWrite, % Otigrovka3Wait%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile3\setting_1tab.ini, Otigrovka3, Otigrovka3Wait%A_index%
+IniWrite, % Otigrovka3SendType%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile3\setting_1tab.ini, Otigrovka3, Otigrovka3SendType%A_index%
     }
 }
     Gui, Otigrovka3: Destroy
@@ -378,27 +377,27 @@ if ProfileNumber = Профиль 1
     {
 Loop, 10
     {
-IniWrite, % Otigrovka4Text%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile1\setting_1tab.ini, Setup, Otigrovka4Text%A_index%
-IniWrite, % Otigrovka4Wait%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile1\setting_1tab.ini, Setup, Otigrovka4Wait%A_index%
-IniWrite, % Otigrovka4SendType%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile1\setting_1tab.ini, Setup, Otigrovka4SendType%A_index%
+IniWrite, % Otigrovka4Text%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile1\setting_1tab.ini, Otigrovka4, Otigrovka4Text%A_index%
+IniWrite, % Otigrovka4Wait%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile1\setting_1tab.ini, Otigrovka4, Otigrovka4Wait%A_index%
+IniWrite, % Otigrovka4SendType%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile1\setting_1tab.ini, Otigrovka4, Otigrovka4SendType%A_index%
     }
 }
 if ProfileNumber = Профиль 2
     {
 Loop, 10
     {
-IniWrite, % Otigrovka4Text%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile2\setting_1tab.ini, Setup, Otigrovka4Text%A_index%
-IniWrite, % Otigrovka4Wait%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile2\setting_1tab.ini, Setup, Otigrovka4Wait%A_index%
-IniWrite, % Otigrovka4SendType%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile2\setting_1tab.ini, Setup, Otigrovka4SendType%A_index%
+IniWrite, % Otigrovka4Text%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile2\setting_1tab.ini, Otigrovka4, Otigrovka4Text%A_index%
+IniWrite, % Otigrovka4Wait%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile2\setting_1tab.ini, Otigrovka4, Otigrovka4Wait%A_index%
+IniWrite, % Otigrovka4SendType%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile2\setting_1tab.ini, Otigrovka4, Otigrovka4SendType%A_index%
     }
 }
 if ProfileNumber = Профиль 3
     {
 Loop, 10
     {
-IniWrite, % Otigrovka4Text%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile3\setting_1tab.ini, Setup, Otigrovka4Text%A_index%
-IniWrite, % Otigrovka4Wait%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile3\setting_1tab.ini, Setup, Otigrovka4Wait%A_index%
-IniWrite, % Otigrovka4SendType%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile3\setting_1tab.ini, Setup, Otigrovka4SendType%A_index%
+IniWrite, % Otigrovka4Text%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile3\setting_1tab.ini, Otigrovka4, Otigrovka4Text%A_index%
+IniWrite, % Otigrovka4Wait%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile3\setting_1tab.ini, Otigrovka4, Otigrovka4Wait%A_index%
+IniWrite, % Otigrovka4SendType%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile3\setting_1tab.ini, Otigrovka4, Otigrovka4SendType%A_index%
     }
 }
     Gui, Otigrovka4: Destroy
@@ -411,27 +410,27 @@ if ProfileNumber = Профиль 1
     {
 Loop, 10
     {
-IniWrite, % Otigrovka5Text%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile1\setting_1tab.ini, Setup, Otigrovka5Text%A_index%
-IniWrite, % Otigrovka5Wait%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile1\setting_1tab.ini, Setup, Otigrovka5Wait%A_index%
-IniWrite, % Otigrovka5SendType%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile1\setting_1tab.ini, Setup, Otigrovka5SendType%A_index%
+IniWrite, % Otigrovka5Text%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile1\setting_1tab.ini, Otigrovka5, Otigrovka5Text%A_index%
+IniWrite, % Otigrovka5Wait%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile1\setting_1tab.ini, Otigrovka5, Otigrovka5Wait%A_index%
+IniWrite, % Otigrovka5SendType%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile1\setting_1tab.ini, Otigrovka5, Otigrovka5SendType%A_index%
     }
 }
 if ProfileNumber = Профиль 2
     {
 Loop, 10
     {
-IniWrite, % Otigrovka5Text%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile2\setting_1tab.ini, Setup, Otigrovka5Text%A_index%
-IniWrite, % Otigrovka5Wait%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile2\setting_1tab.ini, Setup, Otigrovka5Wait%A_index%
-IniWrite, % Otigrovka5SendType%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile2\setting_1tab.ini, Setup, Otigrovka5SendType%A_index%
+IniWrite, % Otigrovka5Text%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile2\setting_1tab.ini, Otigrovka5, Otigrovka5Text%A_index%
+IniWrite, % Otigrovka5Wait%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile2\setting_1tab.ini, Otigrovka5, Otigrovka5Wait%A_index%
+IniWrite, % Otigrovka5SendType%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile2\setting_1tab.ini, Otigrovka5, Otigrovka5SendType%A_index%
     }
 }
 if ProfileNumber = Профиль 3
     {
 Loop, 10
     {
-IniWrite, % Otigrovka5Text%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile3\setting_1tab.ini, Setup, Otigrovka5Text%A_index%
-IniWrite, % Otigrovka5Wait%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile3\setting_1tab.ini, Setup, Otigrovka5Wait%A_index%
-IniWrite, % Otigrovka5SendType%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile3\setting_1tab.ini, Setup, Otigrovka5SendType%A_index%
+IniWrite, % Otigrovka5Text%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile3\setting_1tab.ini, Otigrovka5, Otigrovka5Text%A_index%
+IniWrite, % Otigrovka5Wait%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile3\setting_1tab.ini, Otigrovka5, Otigrovka5Wait%A_index%
+IniWrite, % Otigrovka5SendType%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile3\setting_1tab.ini, Otigrovka5, Otigrovka5SendType%A_index%
     }
 }
     Gui, Otigrovka5: Destroy
@@ -445,27 +444,27 @@ if ProfileNumber = Профиль 1
     {
 Loop, 10
     {
-IniWrite, % Otigrovka6Text%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile1\setting_1tab.ini, Setup, Otigrovka6Text%A_index%
-IniWrite, % Otigrovka6Wait%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile1\setting_1tab.ini, Setup, Otigrovka6Wait%A_index%
-IniWrite, % Otigrovka6SendType%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile1\setting_1tab.ini, Setup, Otigrovka6SendType%A_index%
+IniWrite, % Otigrovka6Text%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile1\setting_1tab.ini, Otigrovka6, Otigrovka6Text%A_index%
+IniWrite, % Otigrovka6Wait%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile1\setting_1tab.ini, Otigrovka6, Otigrovka6Wait%A_index%
+IniWrite, % Otigrovka6SendType%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile1\setting_1tab.ini, Otigrovka6, Otigrovka6SendType%A_index%
     }
 }
 if ProfileNumber = Профиль 2
     {
 Loop, 10
     {
-IniWrite, % Otigrovka6Text%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile2\setting_1tab.ini, Setup, Otigrovka6Text%A_index%
-IniWrite, % Otigrovka6Wait%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile2\setting_1tab.ini, Setup, Otigrovka6Wait%A_index%
-IniWrite, % Otigrovka6SendType%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile2\setting_1tab.ini, Setup, Otigrovka6SendType%A_index%
+IniWrite, % Otigrovka6Text%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile2\setting_1tab.ini, Otigrovka6, Otigrovka6Text%A_index%
+IniWrite, % Otigrovka6Wait%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile2\setting_1tab.ini, Otigrovka6, Otigrovka6Wait%A_index%
+IniWrite, % Otigrovka6SendType%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile2\setting_1tab.ini, Otigrovka6, Otigrovka6SendType%A_index%
     }
 }
 if ProfileNumber = Профиль 3
     {
 Loop, 10
     {
-IniWrite, % Otigrovka6Text%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile3\setting_1tab.ini, Setup, Otigrovka6Text%A_index%
-IniWrite, % Otigrovka6Wait%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile3\setting_1tab.ini, Setup, Otigrovka6Wait%A_index%
-IniWrite, % Otigrovka6SendType%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile3\setting_1tab.ini, Setup, Otigrovka6SendType%A_index%
+IniWrite, % Otigrovka6Text%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile3\setting_1tab.ini, Otigrovka6, Otigrovka6Text%A_index%
+IniWrite, % Otigrovka6Wait%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile3\setting_1tab.ini, Otigrovka6, Otigrovka6Wait%A_index%
+IniWrite, % Otigrovka6SendType%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile3\setting_1tab.ini, Otigrovka6, Otigrovka6SendType%A_index%
     }
 }
     Gui, Otigrovka6: Destroy
@@ -478,27 +477,27 @@ if ProfileNumber = Профиль 1
     {
 Loop, 10
     {
-IniWrite, % Otigrovka7Text%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile1\setting_1tab.ini, Setup, Otigrovka7Text%A_index%
-IniWrite, % Otigrovka7Wait%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile1\setting_1tab.ini, Setup, Otigrovka7Wait%A_index%
-IniWrite, % Otigrovka7SendType%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile1\setting_1tab.ini, Setup, Otigrovka7SendType%A_index%
+IniWrite, % Otigrovka7Text%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile1\setting_1tab.ini, Otigrovka7, Otigrovka7Text%A_index%
+IniWrite, % Otigrovka7Wait%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile1\setting_1tab.ini, Otigrovka7, Otigrovka7Wait%A_index%
+IniWrite, % Otigrovka7SendType%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile1\setting_1tab.ini, Otigrovka7, Otigrovka7SendType%A_index%
     }
 }
 if ProfileNumber = Профиль 2
     {
 Loop, 10
     {
-IniWrite, % Otigrovka7Text%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile2\setting_1tab.ini, Setup, Otigrovka7Text%A_index%
-IniWrite, % Otigrovka7Wait%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile2\setting_1tab.ini, Setup, Otigrovka7Wait%A_index%
-IniWrite, % Otigrovka7SendType%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile2\setting_1tab.ini, Setup, Otigrovka7SendType%A_index%
+IniWrite, % Otigrovka7Text%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile2\setting_1tab.ini, Otigrovka7, Otigrovka7Text%A_index%
+IniWrite, % Otigrovka7Wait%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile2\setting_1tab.ini, Otigrovka7, Otigrovka7Wait%A_index%
+IniWrite, % Otigrovka7SendType%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile2\setting_1tab.ini, Otigrovka7, Otigrovka7SendType%A_index%
     }
 }
 if ProfileNumber = Профиль 3
     {
 Loop, 10
     {
-IniWrite, % Otigrovka7Text%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile3\setting_1tab.ini, Setup, Otigrovka7Text%A_index%
-IniWrite, % Otigrovka7Wait%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile3\setting_1tab.ini, Setup, Otigrovka7Wait%A_index%
-IniWrite, % Otigrovka7SendType%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile3\setting_1tab.ini, Setup, Otigrovka7SendType%A_index%
+IniWrite, % Otigrovka7Text%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile3\setting_1tab.ini, Otigrovka7, Otigrovka7Text%A_index%
+IniWrite, % Otigrovka7Wait%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile3\setting_1tab.ini, Otigrovka7, Otigrovka7Wait%A_index%
+IniWrite, % Otigrovka7SendType%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile3\setting_1tab.ini, Otigrovka7, Otigrovka7SendType%A_index%
     }
 }
     Gui, Otigrovka7: Destroy
@@ -511,27 +510,27 @@ if ProfileNumber = Профиль 1
     {
 Loop, 10
     {
-IniWrite, % Otigrovka8Text%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile1\setting_1tab.ini, Setup, Otigrovka8Text%A_index%
-IniWrite, % Otigrovka8Wait%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile1\setting_1tab.ini, Setup, Otigrovka8Wait%A_index%
-IniWrite, % Otigrovka8SendType%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile1\setting_1tab.ini, Setup, Otigrovka8SendType%A_index%
+IniWrite, % Otigrovka8Text%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile1\setting_1tab.ini, Otigrovka8, Otigrovka8Text%A_index%
+IniWrite, % Otigrovka8Wait%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile1\setting_1tab.ini, Otigrovka8, Otigrovka8Wait%A_index%
+IniWrite, % Otigrovka8SendType%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile1\setting_1tab.ini, Otigrovka8, Otigrovka8SendType%A_index%
     }
 }
 if ProfileNumber = Профиль 2
     {
 Loop, 10
     {
-IniWrite, % Otigrovka8Text%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile2\setting_1tab.ini, Setup, Otigrovka8Text%A_index%
-IniWrite, % Otigrovka8Wait%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile2\setting_1tab.ini, Setup, Otigrovka8Wait%A_index%
-IniWrite, % Otigrovka8SendType%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile2\setting_1tab.ini, Setup, Otigrovka8SendType%A_index%
+IniWrite, % Otigrovka8Text%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile2\setting_1tab.ini, Otigrovka8, Otigrovka8Text%A_index%
+IniWrite, % Otigrovka8Wait%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile2\setting_1tab.ini, Otigrovka8, Otigrovka8Wait%A_index%
+IniWrite, % Otigrovka8SendType%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile2\setting_1tab.ini, Otigrovka8, Otigrovka8SendType%A_index%
     }
 }
 if ProfileNumber = Профиль 3
     {
 Loop, 10
     {
-IniWrite, % Otigrovka8Text%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile3\setting_1tab.ini, Setup, Otigrovka8Text%A_index%
-IniWrite, % Otigrovka8Wait%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile3\setting_1tab.ini, Setup, Otigrovka8Wait%A_index%
-IniWrite, % Otigrovka8SendType%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile3\setting_1tab.ini, Setup, Otigrovka8SendType%A_index%
+IniWrite, % Otigrovka8Text%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile3\setting_1tab.ini, Otigrovka8, Otigrovka8Text%A_index%
+IniWrite, % Otigrovka8Wait%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile3\setting_1tab.ini, Otigrovka8, Otigrovka8Wait%A_index%
+IniWrite, % Otigrovka8SendType%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile3\setting_1tab.ini, Otigrovka8, Otigrovka8SendType%A_index%
     }
 }
     Gui, Otigrovka8: Destroy
@@ -544,27 +543,27 @@ if ProfileNumber = Профиль 1
     {
 Loop, 10
     {
-IniWrite, % Otigrovka9Text%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile1\setting_1tab.ini, Setup, Otigrovka9Text%A_index%
-IniWrite, % Otigrovka9Wait%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile1\setting_1tab.ini, Setup, Otigrovka9Wait%A_index%
-IniWrite, % Otigrovka9SendType%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile1\setting_1tab.ini, Setup, Otigrovka9SendType%A_index%
+IniWrite, % Otigrovka9Text%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile1\setting_1tab.ini, Otigrovka9, Otigrovka9Text%A_index%
+IniWrite, % Otigrovka9Wait%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile1\setting_1tab.ini, Otigrovka9, Otigrovka9Wait%A_index%
+IniWrite, % Otigrovka9SendType%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile1\setting_1tab.ini, Otigrovka9, Otigrovka9SendType%A_index%
     }
 }
 if ProfileNumber = Профиль 2
     {
 Loop, 10
     {
-IniWrite, % Otigrovka9Text%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile2\setting_1tab.ini, Setup, Otigrovka9Text%A_index%
-IniWrite, % Otigrovka9Wait%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile2\setting_1tab.ini, Setup, Otigrovka9Wait%A_index%
-IniWrite, % Otigrovka9SendType%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile2\setting_1tab.ini, Setup, Otigrovka9SendType%A_index%
+IniWrite, % Otigrovka9Text%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile2\setting_1tab.ini, Otigrovka9, Otigrovka9Text%A_index%
+IniWrite, % Otigrovka9Wait%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile2\setting_1tab.ini, Otigrovka9, Otigrovka9Wait%A_index%
+IniWrite, % Otigrovka9SendType%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile2\setting_1tab.ini, Otigrovka9, Otigrovka9SendType%A_index%
     }
 }
 if ProfileNumber = Профиль 3
     {
 Loop, 10
     {
-IniWrite, % Otigrovka9Text%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile3\setting_1tab.ini, Setup, Otigrovka9Text%A_index%
-IniWrite, % Otigrovka9Wait%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile3\setting_1tab.ini, Setup, Otigrovka9Wait%A_index%
-IniWrite, % Otigrovka9SendType%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile3\setting_1tab.ini, Setup, Otigrovka9SendType%A_index%
+IniWrite, % Otigrovka9Text%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile3\setting_1tab.ini, Otigrovka9, Otigrovka9Text%A_index%
+IniWrite, % Otigrovka9Wait%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile3\setting_1tab.ini, Otigrovka9, Otigrovka9Wait%A_index%
+IniWrite, % Otigrovka9SendType%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile3\setting_1tab.ini, Otigrovka9, Otigrovka9SendType%A_index%
     }
 }
     Gui, Otigrovka9: Destroy
@@ -577,27 +576,27 @@ if ProfileNumber = Профиль 1
     {
 Loop, 10
     {
-IniWrite, % Otigrovka10Text%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile1\setting_1tab.ini, Setup, Otigrovka10Text%A_index%
-IniWrite, % Otigrovka10Wait%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile1\setting_1tab.ini, Setup, Otigrovka10Wait%A_index%
-IniWrite, % Otigrovka10SendType%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile1\setting_1tab.ini, Setup, Otigrovka10SendType%A_index%
+IniWrite, % Otigrovka10Text%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile1\setting_1tab.ini, Otigrovka10, Otigrovka10Text%A_index%
+IniWrite, % Otigrovka10Wait%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile1\setting_1tab.ini, Otigrovka10, Otigrovka10Wait%A_index%
+IniWrite, % Otigrovka10SendType%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile1\setting_1tab.ini, Otigrovka10, Otigrovka10SendType%A_index%
     }
 }
 if ProfileNumber = Профиль 2
     {
 Loop, 10
     {
-IniWrite, % Otigrovka10Text%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile2\setting_1tab.ini, Setup, Otigrovka10Text%A_index%
-IniWrite, % Otigrovka10Wait%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile2\setting_1tab.ini, Setup, Otigrovka10Wait%A_index%
-IniWrite, % Otigrovka10SendType%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile2\setting_1tab.ini, Setup, Otigrovka10SendType%A_index%
+IniWrite, % Otigrovka10Text%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile2\setting_1tab.ini, Otigrovka10, Otigrovka10Text%A_index%
+IniWrite, % Otigrovka10Wait%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile2\setting_1tab.ini, Otigrovka10, Otigrovka10Wait%A_index%
+IniWrite, % Otigrovka10SendType%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile2\setting_1tab.ini, Otigrovka10, Otigrovka10SendType%A_index%
     }
 }
 if ProfileNumber = Профиль 3
     {
 Loop, 10
     {
-IniWrite, % Otigrovka10Text%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile3\setting_1tab.ini, Setup, Otigrovka10Text%A_index%
-IniWrite, % Otigrovka10Wait%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile3\setting_1tab.ini, Setup, Otigrovka10Wait%A_index%
-IniWrite, % Otigrovka10SendType%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile3\setting_1tab.ini, Setup, Otigrovka10SendType%A_index%
+IniWrite, % Otigrovka10Text%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile3\setting_1tab.ini, Otigrovka10, Otigrovka10Text%A_index%
+IniWrite, % Otigrovka10Wait%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile3\setting_1tab.ini, Otigrovka10, Otigrovka10Wait%A_index%
+IniWrite, % Otigrovka10SendType%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile3\setting_1tab.ini, Otigrovka10, Otigrovka10SendType%A_index%
     }
 }
     Gui, Otigrovka10: Destroy
@@ -610,27 +609,27 @@ if ProfileNumber = Профиль 1
     {
 Loop, 10
     {
-IniWrite, % Otigrovka11Text%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile1\setting_1tab.ini, Setup, Otigrovka11Text%A_index%
-IniWrite, % Otigrovka11Wait%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile1\setting_1tab.ini, Setup, Otigrovka11Wait%A_index%
-IniWrite, % Otigrovka11SendType%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile1\setting_1tab.ini, Setup, Otigrovka11SendType%A_index%
+IniWrite, % Otigrovka11Text%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile1\setting_1tab.ini, Otigrovka11, Otigrovka11Text%A_index%
+IniWrite, % Otigrovka11Wait%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile1\setting_1tab.ini, Otigrovka11, Otigrovka11Wait%A_index%
+IniWrite, % Otigrovka11SendType%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile1\setting_1tab.ini, Otigrovka11, Otigrovka11SendType%A_index%
     }
 }
 if ProfileNumber = Профиль 2
     {
 Loop, 10
     {
-IniWrite, % Otigrovka11Text%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile2\setting_1tab.ini, Setup, Otigrovka11Text%A_index%
-IniWrite, % Otigrovka11Wait%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile2\setting_1tab.ini, Setup, Otigrovka11Wait%A_index%
-IniWrite, % Otigrovka11SendType%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile2\setting_1tab.ini, Setup, Otigrovka11SendType%A_index%
+IniWrite, % Otigrovka11Text%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile2\setting_1tab.ini, Otigrovka11, Otigrovka11Text%A_index%
+IniWrite, % Otigrovka11Wait%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile2\setting_1tab.ini, Otigrovka11, Otigrovka11Wait%A_index%
+IniWrite, % Otigrovka11SendType%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile2\setting_1tab.ini, Otigrovka11, Otigrovka11SendType%A_index%
     }
 }
 if ProfileNumber = Профиль 3
     {
 Loop, 10
     {
-IniWrite, % Otigrovka11Text%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile3\setting_1tab.ini, Setup, Otigrovka11Text%A_index%
-IniWrite, % Otigrovka11Wait%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile3\setting_1tab.ini, Setup, Otigrovka11Wait%A_index%
-IniWrite, % Otigrovka11SendType%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile3\setting_1tab.ini, Setup, Otigrovka11SendType%A_index%
+IniWrite, % Otigrovka11Text%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile3\setting_1tab.ini, Otigrovka11, Otigrovka11Text%A_index%
+IniWrite, % Otigrovka11Wait%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile3\setting_1tab.ini, Otigrovka11, Otigrovka11Wait%A_index%
+IniWrite, % Otigrovka11SendType%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile3\setting_1tab.ini, Otigrovka11, Otigrovka11SendType%A_index%
     }
 }
     Gui, Otigrovka11: Destroy
@@ -643,27 +642,27 @@ if ProfileNumber = Профиль 1
     {
 Loop, 10
     {
-IniWrite, % Otigrovka12Text%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile1\setting_1tab.ini, Setup, Otigrovka12Text%A_index%
-IniWrite, % Otigrovka12Wait%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile1\setting_1tab.ini, Setup, Otigrovka12Wait%A_index%
-IniWrite, % Otigrovka12SendType%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile1\setting_1tab.ini, Setup, Otigrovka12SendType%A_index%
+IniWrite, % Otigrovka12Text%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile1\setting_1tab.ini, Otigrovka12, Otigrovka12Text%A_index%
+IniWrite, % Otigrovka12Wait%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile1\setting_1tab.ini, Otigrovka12, Otigrovka12Wait%A_index%
+IniWrite, % Otigrovka12SendType%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile1\setting_1tab.ini, Otigrovka12, Otigrovka12SendType%A_index%
     }
 }
 if ProfileNumber = Профиль 2
     {
 Loop, 10
     {
-IniWrite, % Otigrovka12Text%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile2\setting_1tab.ini, Setup, Otigrovka12Text%A_index%
-IniWrite, % Otigrovka12Wait%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile2\etting_1tab.ini, Setup, Otigrovka12Wait%A_index%
-IniWrite, % Otigrovka12SendType%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile2\setting_1tab.ini, Setup, Otigrovka12SendType%A_index%
+IniWrite, % Otigrovka12Text%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile2\setting_1tab.ini, Otigrovka12, Otigrovka12Text%A_index%
+IniWrite, % Otigrovka12Wait%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile2\etting_1tab.ini, Otigrovka12, Otigrovka12Wait%A_index%
+IniWrite, % Otigrovka12SendType%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile2\setting_1tab.ini, Otigrovka12, Otigrovka12SendType%A_index%
     }
 }
 if ProfileNumber = Профиль 3
     {
 Loop, 10
     {
-IniWrite, % Otigrovka12Text%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile3\setting_1tab.ini, Setup, Otigrovka12Text%A_index%
-IniWrite, % Otigrovka12Wait%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile3\etting_1tab.ini, Setup, Otigrovka12Wait%A_index%
-IniWrite, % Otigrovka12SendType%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile3\setting_1tab.ini, Setup, Otigrovka12SendType%A_index%
+IniWrite, % Otigrovka12Text%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile3\setting_1tab.ini, Otigrovka12, Otigrovka12Text%A_index%
+IniWrite, % Otigrovka12Wait%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile3\etting_1tab.ini, Otigrovka12, Otigrovka12Wait%A_index%
+IniWrite, % Otigrovka12SendType%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile3\setting_1tab.ini, Otigrovka12, Otigrovka12SendType%A_index%
     }
 }
     Gui, Otigrovka12: Destroy
@@ -676,27 +675,27 @@ if ProfileNumber = Профиль 1
     {
 Loop, 10
     {
-IniWrite, % Otigrovka13Text%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile1\setting_1tab.ini, Setup, Otigrovka13Text%A_index%
-IniWrite, % Otigrovka13Wait%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile1\setting_1tab.ini, Setup, Otigrovka13Wait%A_index%
-IniWrite, % Otigrovka13SendType%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile1\setting_1tab.ini, Setup, Otigrovka13SendType%A_index%
+IniWrite, % Otigrovka13Text%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile1\setting_1tab.ini, Otigrovka13, Otigrovka13Text%A_index%
+IniWrite, % Otigrovka13Wait%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile1\setting_1tab.ini, Otigrovka13, Otigrovka13Wait%A_index%
+IniWrite, % Otigrovka13SendType%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile1\setting_1tab.ini, Otigrovka13, Otigrovka13SendType%A_index%
     }
 }
 if ProfileNumber = Профиль 2
     {
 Loop, 10
     {
-IniWrite, % Otigrovka13Text%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile2\setting_1tab.ini, Setup, Otigrovka13Text%A_index%
-IniWrite, % Otigrovka13Wait%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile2\setting_1tab.ini, Setup, Otigrovka13Wait%A_index%
-IniWrite, % Otigrovka13SendType%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile2\setting_1tab.ini, Setup, Otigrovka13SendType%A_index%
+IniWrite, % Otigrovka13Text%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile2\setting_1tab.ini, Otigrovka13, Otigrovka13Text%A_index%
+IniWrite, % Otigrovka13Wait%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile2\setting_1tab.ini, Otigrovka13, Otigrovka13Wait%A_index%
+IniWrite, % Otigrovka13SendType%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile2\setting_1tab.ini, Otigrovka13, Otigrovka13SendType%A_index%
     }
 }
 if ProfileNumber = Профиль 3
     {
 Loop, 10
     {
-IniWrite, % Otigrovka13Text%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile3\setting_1tab.ini, Setup, Otigrovka13Text%A_index%
-IniWrite, % Otigrovka13Wait%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile3\setting_1tab.ini, Setup, Otigrovka13Wait%A_index%
-IniWrite, % Otigrovka13SendType%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile3\setting_1tab.ini, Setup, Otigrovka13SendType%A_index%
+IniWrite, % Otigrovka13Text%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile3\setting_1tab.ini, Otigrovka13, Otigrovka13Text%A_index%
+IniWrite, % Otigrovka13Wait%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile3\setting_1tab.ini, Otigrovka13, Otigrovka13Wait%A_index%
+IniWrite, % Otigrovka13SendType%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile3\setting_1tab.ini, Otigrovka13, Otigrovka13SendType%A_index%
     }
 }
     Gui, Otigrovka13: Destroy
@@ -709,27 +708,27 @@ if ProfileNumber = Профиль 1
     {
 Loop, 10
     {
-IniWrite, % Otigrovka14Text%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile1\setting_1tab.ini, Setup, Otigrovka14Text%A_index%
-IniWrite, % Otigrovka14Wait%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile1\setting_1tab.ini, Setup, Otigrovka14Wait%A_index%
-IniWrite, % Otigrovka14SendType%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile1\setting_1tab.ini, Setup, Otigrovka14SendType%A_index%
+IniWrite, % Otigrovka14Text%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile1\setting_1tab.ini, Otigrovka14, Otigrovka14Text%A_index%
+IniWrite, % Otigrovka14Wait%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile1\setting_1tab.ini, Otigrovka14, Otigrovka14Wait%A_index%
+IniWrite, % Otigrovka14SendType%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile1\setting_1tab.ini, Otigrovka14, Otigrovka14SendType%A_index%
     }
 }
 if ProfileNumber = Профиль 2
     {
 Loop, 10
     {
-IniWrite, % Otigrovka14Text%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile2\setting_1tab.ini, Setup, Otigrovka14Text%A_index%
-IniWrite, % Otigrovka14Wait%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile2\setting_1tab.ini, Setup, Otigrovka14Wait%A_index%
-IniWrite, % Otigrovka14SendType%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile2\setting_1tab.ini, Setup, Otigrovka14SendType%A_index%
+IniWrite, % Otigrovka14Text%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile2\setting_1tab.ini, Otigrovka14, Otigrovka14Text%A_index%
+IniWrite, % Otigrovka14Wait%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile2\setting_1tab.ini, Otigrovka14, Otigrovka14Wait%A_index%
+IniWrite, % Otigrovka14SendType%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile2\setting_1tab.ini, Otigrovka14, Otigrovka14SendType%A_index%
     }
 }
 if ProfileNumber = Профиль 3
     {
 Loop, 10
     {
-IniWrite, % Otigrovka14Text%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile3\setting_1tab.ini, Setup, Otigrovka14Text%A_index%
-IniWrite, % Otigrovka14Wait%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile3\setting_1tab.ini, Setup, Otigrovka14Wait%A_index%
-IniWrite, % Otigrovka14SendType%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile3\setting_1tab.ini, Setup, Otigrovka14SendType%A_index%
+IniWrite, % Otigrovka14Text%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile3\setting_1tab.ini, Otigrovka14, Otigrovka14Text%A_index%
+IniWrite, % Otigrovka14Wait%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile3\setting_1tab.ini, Otigrovka14, Otigrovka14Wait%A_index%
+IniWrite, % Otigrovka14SendType%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile3\setting_1tab.ini, Otigrovka14, Otigrovka14SendType%A_index%
     }
 }
     Gui, Otigrovka14: Destroy
@@ -742,27 +741,27 @@ if ProfileNumber = Профиль 1
     {
 Loop, 10
     {
-IniWrite, % Otigrovka15Text%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile1\setting_1tab.ini, Setup, Otigrovka15Text%A_index%
-IniWrite, % Otigrovka15Wait%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile1\setting_1tab.ini, Setup, Otigrovka15Wait%A_index%
-IniWrite, % Otigrovka15SendType%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile1\setting_1tab.ini, Setup, Otigrovka15SendType%A_index%
+IniWrite, % Otigrovka15Text%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile1\setting_1tab.ini, Otigrovka15, Otigrovka15Text%A_index%
+IniWrite, % Otigrovka15Wait%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile1\setting_1tab.ini, Otigrovka15, Otigrovka15Wait%A_index%
+IniWrite, % Otigrovka15SendType%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile1\setting_1tab.ini, Otigrovka15, Otigrovka15SendType%A_index%
     }
 }
 if ProfileNumber = Профиль 2
     {
 Loop, 10
     {
-IniWrite, % Otigrovka15Text%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile2\setting_1tab.ini, Setup, Otigrovka15Text%A_index%
-IniWrite, % Otigrovka15Wait%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile2\setting_1tab.ini, Setup, Otigrovka15Wait%A_index%
-IniWrite, % Otigrovka15SendType%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile2\setting_1tab.ini, Setup, Otigrovka15SendType%A_index%
+IniWrite, % Otigrovka15Text%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile2\setting_1tab.ini, Otigrovka15, Otigrovka15Text%A_index%
+IniWrite, % Otigrovka15Wait%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile2\setting_1tab.ini, Otigrovka15, Otigrovka15Wait%A_index%
+IniWrite, % Otigrovka15SendType%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile2\setting_1tab.ini, Otigrovka15, Otigrovka15SendType%A_index%
     }
 }
 if ProfileNumber = Профиль 3
     {
 Loop, 10
     {
-IniWrite, % Otigrovka15Text%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile3\setting_1tab.ini, Setup, Otigrovka15Text%A_index%
-IniWrite, % Otigrovka15Wait%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile3\setting_1tab.ini, Setup, Otigrovka15Wait%A_index%
-IniWrite, % Otigrovka15SendType%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile3\setting_1tab.ini, Setup, Otigrovka15SendType%A_index%
+IniWrite, % Otigrovka15Text%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile3\setting_1tab.ini, Otigrovka15, Otigrovka15Text%A_index%
+IniWrite, % Otigrovka15Wait%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile3\setting_1tab.ini, Otigrovka15, Otigrovka15Wait%A_index%
+IniWrite, % Otigrovka15SendType%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile3\setting_1tab.ini, Otigrovka15, Otigrovka15SendType%A_index%
     }
 }
     Gui, Otigrovka15: Destroy
@@ -775,27 +774,27 @@ if ProfileNumber = Профиль 1
     {
 Loop, 10
     {
-IniWrite, % Otigrovka16Text%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile1\setting_1tab.ini, Setup, Otigrovka16Text%A_index%
-IniWrite, % Otigrovka16Wait%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile1\setting_1tab.ini, Setup, Otigrovka16Wait%A_index%
-IniWrite, % Otigrovka16SendType%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile1\setting_1tab.ini, Setup, Otigrovka16SendType%A_index%
+IniWrite, % Otigrovka16Text%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile1\setting_1tab.ini, Otigrovka16, Otigrovka16Text%A_index%
+IniWrite, % Otigrovka16Wait%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile1\setting_1tab.ini, Otigrovka16, Otigrovka16Wait%A_index%
+IniWrite, % Otigrovka16SendType%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile1\setting_1tab.ini, Otigrovka16, Otigrovka16SendType%A_index%
     }
 }
 if ProfileNumber = Профиль 2
     {
 Loop, 10
     {
-IniWrite, % Otigrovka16Text%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile2\setting_1tab.ini, Setup, Otigrovka16Text%A_index%
-IniWrite, % Otigrovka16Wait%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile2\setting_1tab.ini, Setup, Otigrovka16Wait%A_index%
-IniWrite, % Otigrovka16SendType%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile2\setting_1tab.ini, Setup, Otigrovka16SendType%A_index%
+IniWrite, % Otigrovka16Text%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile2\setting_1tab.ini, Otigrovka16, Otigrovka16Text%A_index%
+IniWrite, % Otigrovka16Wait%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile2\setting_1tab.ini, Otigrovka16, Otigrovka16Wait%A_index%
+IniWrite, % Otigrovka16SendType%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile2\setting_1tab.ini, Otigrovka16, Otigrovka16SendType%A_index%
     }
 }
 if ProfileNumber = Профиль 3
     {
 Loop, 10
     {
-IniWrite, % Otigrovka16Text%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile3\setting_1tab.ini, Setup, Otigrovka16Text%A_index%
-IniWrite, % Otigrovka16Wait%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile3\setting_1tab.ini, Setup, Otigrovka16Wait%A_index%
-IniWrite, % Otigrovka16SendType%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile3\setting_1tab.ini, Setup, Otigrovka16SendType%A_index%
+IniWrite, % Otigrovka16Text%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile3\setting_1tab.ini, Otigrovka16, Otigrovka16Text%A_index%
+IniWrite, % Otigrovka16Wait%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile3\setting_1tab.ini, Otigrovka16, Otigrovka16Wait%A_index%
+IniWrite, % Otigrovka16SendType%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile3\setting_1tab.ini, Otigrovka16, Otigrovka16SendType%A_index%
     }
 }
     Gui, Otigrovka16: Destroy
@@ -808,27 +807,27 @@ if ProfileNumber = Профиль 1
     {
 Loop, 10
     {
-IniWrite, % Otigrovka17Text%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile1\setting_1tab.ini, Setup, Otigrovka17Text%A_index%
-IniWrite, % Otigrovka17Wait%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile1\setting_1tab.ini, Setup, Otigrovka17Wait%A_index%
-IniWrite, % Otigrovka17SendType%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile1\setting_1tab.ini, Setup, Otigrovka17SendType%A_index%
+IniWrite, % Otigrovka17Text%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile1\setting_1tab.ini, Otigrovka17, Otigrovka17Text%A_index%
+IniWrite, % Otigrovka17Wait%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile1\setting_1tab.ini, Otigrovka17, Otigrovka17Wait%A_index%
+IniWrite, % Otigrovka17SendType%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile1\setting_1tab.ini, Otigrovka17, Otigrovka17SendType%A_index%
     }
 }
 if ProfileNumber = Профиль 2
     {
 Loop, 10
     {
-IniWrite, % Otigrovka17Text%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile2\setting_1tab.ini, Setup, Otigrovka17Text%A_index%
-IniWrite, % Otigrovka17Wait%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile2\setting_1tab.ini, Setup, Otigrovka17Wait%A_index%
-IniWrite, % Otigrovka17SendType%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile2\setting_1tab.ini, Setup, Otigrovka17SendType%A_index%
+IniWrite, % Otigrovka17Text%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile2\setting_1tab.ini, Otigrovka17, Otigrovka17Text%A_index%
+IniWrite, % Otigrovka17Wait%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile2\setting_1tab.ini, Otigrovka17, Otigrovka17Wait%A_index%
+IniWrite, % Otigrovka17SendType%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile2\setting_1tab.ini, Otigrovka17, Otigrovka17SendType%A_index%
     }
 }
 if ProfileNumber = Профиль 3
     {
 Loop, 10
     {
-IniWrite, % Otigrovka17Text%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile3\setting_1tab.ini, Setup, Otigrovka17Text%A_index%
-IniWrite, % Otigrovka17Wait%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile3\setting_1tab.ini, Setup, Otigrovka17Wait%A_index%
-IniWrite, % Otigrovka17SendType%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile3\setting_1tab.ini, Setup, Otigrovka17SendType%A_index%
+IniWrite, % Otigrovka17Text%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile3\setting_1tab.ini, Otigrovka17, Otigrovka17Text%A_index%
+IniWrite, % Otigrovka17Wait%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile3\setting_1tab.ini, Otigrovka17, Otigrovka17Wait%A_index%
+IniWrite, % Otigrovka17SendType%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile3\setting_1tab.ini, Otigrovka17, Otigrovka17SendType%A_index%
     }
 }
     Gui, Otigrovka17: Destroy
@@ -841,27 +840,27 @@ if ProfileNumber = Профиль 1
     {
 Loop, 10
     {
-IniWrite, % Otigrovka18Text%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile1\setting_1tab.ini, Setup, Otigrovka18Text%A_index%
-IniWrite, % Otigrovka18Wait%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile1\setting_1tab.ini, Setup, Otigrovka18Wait%A_index%
-IniWrite, % Otigrovka18SendType%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile1\setting_1tab.ini, Setup, Otigrovka18SendType%A_index%
+IniWrite, % Otigrovka18Text%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile1\setting_1tab.ini, Otigrovka18, Otigrovka18Text%A_index%
+IniWrite, % Otigrovka18Wait%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile1\setting_1tab.ini, Otigrovka18, Otigrovka18Wait%A_index%
+IniWrite, % Otigrovka18SendType%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile1\setting_1tab.ini, Otigrovka18, Otigrovka18SendType%A_index%
     }
 }
 if ProfileNumber = Профиль 2
     {
 Loop, 10
     {
-IniWrite, % Otigrovka18Text%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile2\setting_1tab.ini, Setup, Otigrovka18Text%A_index%
-IniWrite, % Otigrovka18Wait%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile2\setting_1tab.ini, Setup, Otigrovka18Wait%A_index%
-IniWrite, % Otigrovka18SendType%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile2\setting_1tab.ini, Setup, Otigrovka18SendType%A_index%
+IniWrite, % Otigrovka18Text%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile2\setting_1tab.ini, Otigrovka18, Otigrovka18Text%A_index%
+IniWrite, % Otigrovka18Wait%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile2\setting_1tab.ini, Otigrovka18, Otigrovka18Wait%A_index%
+IniWrite, % Otigrovka18SendType%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile2\setting_1tab.ini, Otigrovka18, Otigrovka18SendType%A_index%
     }
 }
 if ProfileNumber = Профиль 3
     {
 Loop, 10
     {
-IniWrite, % Otigrovka18Text%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile3\setting_1tab.ini, Setup, Otigrovka18Text%A_index%
-IniWrite, % Otigrovka18Wait%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile3\setting_1tab.ini, Setup, Otigrovka18Wait%A_index%
-IniWrite, % Otigrovka18SendType%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile3\setting_1tab.ini, Setup, Otigrovka18SendType%A_index%
+IniWrite, % Otigrovka18Text%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile3\setting_1tab.ini, Otigrovka18, Otigrovka18Text%A_index%
+IniWrite, % Otigrovka18Wait%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile3\setting_1tab.ini, Otigrovka18, Otigrovka18Wait%A_index%
+IniWrite, % Otigrovka18SendType%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile3\setting_1tab.ini, Otigrovka18, Otigrovka18SendType%A_index%
     }
 }
     Gui, Otigrovka18: Destroy
@@ -874,27 +873,27 @@ if ProfileNumber = Профиль 1
     {
 Loop, 10
     {
-IniWrite, % Otigrovka19Text%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile1\setting_1tab.ini, Setup, Otigrovka19Text%A_index%
-IniWrite, % Otigrovka19Wait%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile1\setting_1tab.ini, Setup, Otigrovka19Wait%A_index%
-IniWrite, % Otigrovka19SendType%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile1\setting_1tab.ini, Setup, Otigrovka19SendType%A_index%
+IniWrite, % Otigrovka19Text%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile1\setting_1tab.ini, Otigrovka19, Otigrovka19Text%A_index%
+IniWrite, % Otigrovka19Wait%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile1\setting_1tab.ini, Otigrovka19, Otigrovka19Wait%A_index%
+IniWrite, % Otigrovka19SendType%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile1\setting_1tab.ini, Otigrovka19, Otigrovka19SendType%A_index%
     }
 }
 if ProfileNumber = Профиль 2
     {
 Loop, 10
     {
-IniWrite, % Otigrovka19Text%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile2\setting_1tab.ini, Setup, Otigrovka19Text%A_index%
-IniWrite, % Otigrovka19Wait%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile2\setting_1tab.ini, Setup, Otigrovka19Wait%A_index%
-IniWrite, % Otigrovka19SendType%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile2\setting_1tab.ini, Setup, Otigrovka19SendType%A_index%
+IniWrite, % Otigrovka19Text%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile2\setting_1tab.ini, Otigrovka19, Otigrovka19Text%A_index%
+IniWrite, % Otigrovka19Wait%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile2\setting_1tab.ini, Otigrovka19, Otigrovka19Wait%A_index%
+IniWrite, % Otigrovka19SendType%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile2\setting_1tab.ini, Otigrovka19, Otigrovka19SendType%A_index%
     }
 }
 if ProfileNumber = Профиль 3
     {
 Loop, 10
     {
-IniWrite, % Otigrovka19Text%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile3\setting_1tab.ini, Setup, Otigrovka19Text%A_index%
-IniWrite, % Otigrovka19Wait%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile3\setting_1tab.ini, Setup, Otigrovka19Wait%A_index%
-IniWrite, % Otigrovka19SendType%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile3\setting_1tab.ini, Setup, Otigrovka19SendType%A_index%
+IniWrite, % Otigrovka19Text%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile3\setting_1tab.ini, Otigrovka19, Otigrovka19Text%A_index%
+IniWrite, % Otigrovka19Wait%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile3\setting_1tab.ini, Otigrovka19, Otigrovka19Wait%A_index%
+IniWrite, % Otigrovka19SendType%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile3\setting_1tab.ini, Otigrovka19, Otigrovka19SendType%A_index%
     }
 }
     Gui, Otigrovka19: Destroy
@@ -907,27 +906,27 @@ if ProfileNumber = Профиль 1
     {
 Loop, 10
     {
-IniWrite, % Otigrovka20Text%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile1\setting_1tab.ini, Setup, Otigrovka20Text%A_index%
-IniWrite, % Otigrovka20Wait%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile1\setting_1tab.ini, Setup, Otigrovka20Wait%A_index%
-IniWrite, % Otigrovka20SendType%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile1\setting_1tab.ini, Setup, Otigrovka20SendType%A_index%
+IniWrite, % Otigrovka20Text%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile1\setting_1tab.ini, Otigrovka20, Otigrovka20Text%A_index%
+IniWrite, % Otigrovka20Wait%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile1\setting_1tab.ini, Otigrovka20, Otigrovka20Wait%A_index%
+IniWrite, % Otigrovka20SendType%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile1\setting_1tab.ini, Otigrovka20, Otigrovka20SendType%A_index%
     }
 }
 if ProfileNumber = Профиль 2
     {
 Loop, 10
     {
-IniWrite, % Otigrovka20Text%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile2\setting_1tab.ini, Setup, Otigrovka20Text%A_index%
-IniWrite, % Otigrovka20Wait%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile2\setting_1tab.ini, Setup, Otigrovka20Wait%A_index%
-IniWrite, % Otigrovka20SendType%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile2\setting_1tab.ini, Setup, Otigrovka20SendType%A_index%
+IniWrite, % Otigrovka20Text%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile2\setting_1tab.ini, Otigrovka20, Otigrovka20Text%A_index%
+IniWrite, % Otigrovka20Wait%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile2\setting_1tab.ini, Otigrovka20, Otigrovka20Wait%A_index%
+IniWrite, % Otigrovka20SendType%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile2\setting_1tab.ini, Otigrovka20, Otigrovka20SendType%A_index%
     }
 }
 if ProfileNumber = Профиль 3
     {
 Loop, 10
     {
-IniWrite, % Otigrovka20Text%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile3\setting_1tab.ini, Setup, Otigrovka20Text%A_index%
-IniWrite, % Otigrovka20Wait%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile3\setting_1tab.ini, Setup, Otigrovka20Wait%A_index%
-IniWrite, % Otigrovka20SendType%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile3\setting_1tab.ini, Setup, Otigrovka20SendType%A_index%
+IniWrite, % Otigrovka20Text%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile3\setting_1tab.ini, Otigrovka20, Otigrovka20Text%A_index%
+IniWrite, % Otigrovka20Wait%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile3\setting_1tab.ini, Otigrovka20, Otigrovka20Wait%A_index%
+IniWrite, % Otigrovka20SendType%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile3\setting_1tab.ini, Otigrovka20, Otigrovka20SendType%A_index%
     }
 }
     Gui, Otigrovka20: Destroy
@@ -940,27 +939,27 @@ if ProfileNumber = Профиль 1
     {
 Loop, 10
     {
-IniWrite, % Otigrovka21Text%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile1\setting_1tab.ini, Setup, Otigrovka21Text%A_index%
-IniWrite, % Otigrovka21Wait%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile1\setting_1tab.ini, Setup, Otigrovka21Wait%A_index%
-IniWrite, % Otigrovka21SendType%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile1\setting_1tab.ini, Setup, Otigrovka21SendType%A_index%
+IniWrite, % Otigrovka21Text%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile1\setting_1tab.ini, Otigrovka21, Otigrovka21Text%A_index%
+IniWrite, % Otigrovka21Wait%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile1\setting_1tab.ini, Otigrovka21, Otigrovka21Wait%A_index%
+IniWrite, % Otigrovka21SendType%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile1\setting_1tab.ini, Otigrovka21, Otigrovka21SendType%A_index%
     }
 }
 if ProfileNumber = Профиль 2
     {
 Loop, 10
     {
-IniWrite, % Otigrovka21Text%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile2\setting_1tab.ini, Setup, Otigrovka21Text%A_index%
-IniWrite, % Otigrovka21Wait%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile2\setting_1tab.ini, Setup, Otigrovka21Wait%A_index%
-IniWrite, % Otigrovka21SendType%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile2\setting_1tab.ini, Setup, Otigrovka21SendType%A_index%
+IniWrite, % Otigrovka21Text%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile2\setting_1tab.ini, Otigrovka21, Otigrovka21Text%A_index%
+IniWrite, % Otigrovka21Wait%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile2\setting_1tab.ini, Otigrovka21, Otigrovka21Wait%A_index%
+IniWrite, % Otigrovka21SendType%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile2\setting_1tab.ini, Otigrovka21, Otigrovka21SendType%A_index%
     }
 }
 if ProfileNumber = Профиль 3
     {
 Loop, 10
     {
-IniWrite, % Otigrovka21Text%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile3\setting_1tab.ini, Setup, Otigrovka21Text%A_index%
-IniWrite, % Otigrovka21Wait%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile3\setting_1tab.ini, Setup, Otigrovka21Wait%A_index%
-IniWrite, % Otigrovka21SendType%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile3\setting_1tab.ini, Setup, Otigrovka21SendType%A_index%
+IniWrite, % Otigrovka21Text%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile3\setting_1tab.ini, Otigrovka21, Otigrovka21Text%A_index%
+IniWrite, % Otigrovka21Wait%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile3\setting_1tab.ini, Otigrovka21, Otigrovka21Wait%A_index%
+IniWrite, % Otigrovka21SendType%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile3\setting_1tab.ini, Otigrovka21, Otigrovka21SendType%A_index%
     }
 }
     Gui, Otigrovka21: Destroy
@@ -973,27 +972,27 @@ if ProfileNumber = Профиль 1
     {
 Loop, 10
     {
-IniWrite, % Otigrovka22Text%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile1\setting_1tab.ini, Setup, Otigrovka22Text%A_index%
-IniWrite, % Otigrovka22Wait%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile1\setting_1tab.ini, Setup, Otigrovka22Wait%A_index%
-IniWrite, % Otigrovka22SendType%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile1\setting_1tab.ini, Setup, Otigrovka22SendType%A_index%
+IniWrite, % Otigrovka22Text%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile1\setting_1tab.ini, Otigrovka22, Otigrovka22Text%A_index%
+IniWrite, % Otigrovka22Wait%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile1\setting_1tab.ini, Otigrovka22, Otigrovka22Wait%A_index%
+IniWrite, % Otigrovka22SendType%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile1\setting_1tab.ini, Otigrovka22, Otigrovka22SendType%A_index%
     }
 }
 if ProfileNumber = Профиль 2
     {
 Loop, 10
     {
-IniWrite, % Otigrovka22Text%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile2\setting_1tab.ini, Setup, Otigrovka22Text%A_index%
-IniWrite, % Otigrovka22Wait%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile2\setting_1tab.ini, Setup, Otigrovka22Wait%A_index%
-IniWrite, % Otigrovka22SendType%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile2\setting_1tab.ini, Setup, Otigrovka22SendType%A_index%
+IniWrite, % Otigrovka22Text%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile2\setting_1tab.ini, Otigrovka22, Otigrovka22Text%A_index%
+IniWrite, % Otigrovka22Wait%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile2\setting_1tab.ini, Otigrovka22, Otigrovka22Wait%A_index%
+IniWrite, % Otigrovka22SendType%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile2\setting_1tab.ini, Otigrovka22, Otigrovka22SendType%A_index%
     }
 }
 if ProfileNumber = Профиль 3
     {
 Loop, 10
     {
-IniWrite, % Otigrovka22Text%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile3\setting_1tab.ini, Setup, Otigrovka22Text%A_index%
-IniWrite, % Otigrovka22Wait%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile3\setting_1tab.ini, Setup, Otigrovka22Wait%A_index%
-IniWrite, % Otigrovka22SendType%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile3\setting_1tab.ini, Setup, Otigrovka22SendType%A_index%
+IniWrite, % Otigrovka22Text%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile3\setting_1tab.ini, Otigrovka22, Otigrovka22Text%A_index%
+IniWrite, % Otigrovka22Wait%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile3\setting_1tab.ini, Otigrovka22, Otigrovka22Wait%A_index%
+IniWrite, % Otigrovka22SendType%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile3\setting_1tab.ini, Otigrovka22, Otigrovka22SendType%A_index%
     }
 }
     Gui, Otigrovka22: Destroy
@@ -1006,27 +1005,27 @@ if ProfileNumber = Профиль 1
     {
 Loop, 10
     {
-IniWrite, % Otigrovka23Text%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile1\setting_1tab.ini, Setup, Otigrovka23Text%A_index%
-IniWrite, % Otigrovka23Wait%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile1\setting_1tab.ini, Setup, Otigrovka23Wait%A_index%
-IniWrite, % Otigrovka23SendType%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile1\setting_1tab.ini, Setup, Otigrovka23SendType%A_index%
+IniWrite, % Otigrovka23Text%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile1\setting_1tab.ini, Otigrovka23, Otigrovka23Text%A_index%
+IniWrite, % Otigrovka23Wait%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile1\setting_1tab.ini, Otigrovka23, Otigrovka23Wait%A_index%
+IniWrite, % Otigrovka23SendType%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile1\setting_1tab.ini, Otigrovka23, Otigrovka23SendType%A_index%
     }
 }
 if ProfileNumber = Профиль 2
     {
 Loop, 10
     {
-IniWrite, % Otigrovka23Text%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile2\setting_1tab.ini, Setup, Otigrovka23Text%A_index%
-IniWrite, % Otigrovka23Wait%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile2\setting_1tab.ini, Setup, Otigrovka23Wait%A_index%
-IniWrite, % Otigrovka23SendType%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile2\setting_1tab.ini, Setup, Otigrovka23SendType%A_index%
+IniWrite, % Otigrovka23Text%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile2\setting_1tab.ini, Otigrovka23, Otigrovka23Text%A_index%
+IniWrite, % Otigrovka23Wait%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile2\setting_1tab.ini, Otigrovka23, Otigrovka23Wait%A_index%
+IniWrite, % Otigrovka23SendType%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile2\setting_1tab.ini, Otigrovka23, Otigrovka23SendType%A_index%
     }
 }
 if ProfileNumber = Профиль 3
     {
 Loop, 10
     {
-IniWrite, % Otigrovka23Text%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile3\setting_1tab.ini, Setup, Otigrovka23Text%A_index%
-IniWrite, % Otigrovka23Wait%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile3\setting_1tab.ini, Setup, Otigrovka23Wait%A_index%
-IniWrite, % Otigrovka23SendType%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile3\setting_1tab.ini, Setup, Otigrovka23SendType%A_index%
+IniWrite, % Otigrovka23Text%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile3\setting_1tab.ini, Otigrovka23, Otigrovka23Text%A_index%
+IniWrite, % Otigrovka23Wait%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile3\setting_1tab.ini, Otigrovka23, Otigrovka23Wait%A_index%
+IniWrite, % Otigrovka23SendType%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile3\setting_1tab.ini, Otigrovka23, Otigrovka23SendType%A_index%
     }
 }
     Gui, Otigrovka23: Destroy
@@ -1039,27 +1038,27 @@ if ProfileNumber = Профиль 1
     {
 Loop, 10
     {
-IniWrite, % Otigrovka24Text%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile1\setting_1tab.ini, Setup, Otigrovka24Text%A_index%
-IniWrite, % Otigrovka24Wait%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile1\setting_1tab.ini, Setup, Otigrovka24Wait%A_index%
-IniWrite, % Otigrovka24SendType%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile1\setting_1tab.ini, Setup, Otigrovka24SendType%A_index%
+IniWrite, % Otigrovka24Text%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile1\setting_1tab.ini, Otigrovka24, Otigrovka24Text%A_index%
+IniWrite, % Otigrovka24Wait%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile1\setting_1tab.ini, Otigrovka24, Otigrovka24Wait%A_index%
+IniWrite, % Otigrovka24SendType%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile1\setting_1tab.ini, Otigrovka24, Otigrovka24SendType%A_index%
     }
 }
 if ProfileNumber = Профиль 2
     {
 Loop, 10
     {
-IniWrite, % Otigrovka24Text%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile2\setting_1tab.ini, Setup, Otigrovka24Text%A_index%
-IniWrite, % Otigrovka24Wait%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile2\setting_1tab.ini, Setup, Otigrovka24Wait%A_index%
-IniWrite, % Otigrovka24SendType%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile2\setting_1tab.ini, Setup, Otigrovka24SendType%A_index%
+IniWrite, % Otigrovka24Text%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile2\setting_1tab.ini, Otigrovka24, Otigrovka24Text%A_index%
+IniWrite, % Otigrovka24Wait%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile2\setting_1tab.ini, Otigrovka24, Otigrovka24Wait%A_index%
+IniWrite, % Otigrovka24SendType%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile2\setting_1tab.ini, Otigrovka24, Otigrovka24SendType%A_index%
     }
 }
 if ProfileNumber = Профиль 3
     {
 Loop, 10
     {
-IniWrite, % Otigrovka24Text%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile3\setting_1tab.ini, Setup, Otigrovka24Text%A_index%
-IniWrite, % Otigrovka24Wait%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile3\setting_1tab.ini, Setup, Otigrovka24Wait%A_index%
-IniWrite, % Otigrovka24SendType%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile3\setting_1tab.ini, Setup, Otigrovka24SendType%A_index%
+IniWrite, % Otigrovka24Text%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile3\setting_1tab.ini, Otigrovka24, Otigrovka24Text%A_index%
+IniWrite, % Otigrovka24Wait%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile3\setting_1tab.ini, Otigrovka24, Otigrovka24Wait%A_index%
+IniWrite, % Otigrovka24SendType%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile3\setting_1tab.ini, Otigrovka24, Otigrovka24SendType%A_index%
     }
 }
     Gui, Otigrovka24: Destroy
@@ -1072,27 +1071,27 @@ if ProfileNumber = Профиль 1
     {
 Loop, 10
     {
-IniWrite, % Otigrovka25Text%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile1\setting_1tab.ini, Setup, Otigrovka25Text%A_index%
-IniWrite, % Otigrovka25Wait%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile1\setting_1tab.ini, Setup, Otigrovka25Wait%A_index%
-IniWrite, % Otigrovka25SendType%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile1\setting_1tab.ini, Setup, Otigrovka25SendType%A_index%
+IniWrite, % Otigrovka25Text%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile1\setting_1tab.ini, Otigrovka25, Otigrovka25Text%A_index%
+IniWrite, % Otigrovka25Wait%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile1\setting_1tab.ini, Otigrovka25, Otigrovka25Wait%A_index%
+IniWrite, % Otigrovka25SendType%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile1\setting_1tab.ini, Otigrovka25, Otigrovka25SendType%A_index%
     }
 }
 if ProfileNumber = Профиль 2
     {
 Loop, 10
     {
-IniWrite, % Otigrovka25Text%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile2\setting_1tab.ini, Setup, Otigrovka25Text%A_index%
-IniWrite, % Otigrovka25Wait%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile2\setting_1tab.ini, Setup, Otigrovka25Wait%A_index%
-IniWrite, % Otigrovka25SendType%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile2\setting_1tab.ini, Setup, Otigrovka25SendType%A_index%
+IniWrite, % Otigrovka25Text%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile2\setting_1tab.ini, Otigrovka25, Otigrovka25Text%A_index%
+IniWrite, % Otigrovka25Wait%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile2\setting_1tab.ini, Otigrovka25, Otigrovka25Wait%A_index%
+IniWrite, % Otigrovka25SendType%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile2\setting_1tab.ini, Otigrovka25, Otigrovka25SendType%A_index%
     }
 }
 if ProfileNumber = Профиль 3
     {
 Loop, 10
     {
-IniWrite, % Otigrovka25Text%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile3\setting_1tab.ini, Setup, Otigrovka25Text%A_index%
-IniWrite, % Otigrovka25Wait%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile3\setting_1tab.ini, Setup, Otigrovka25Wait%A_index%
-IniWrite, % Otigrovka25SendType%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile3\setting_1tab.ini, Setup, Otigrovka25SendType%A_index%
+IniWrite, % Otigrovka25Text%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile3\setting_1tab.ini, Otigrovka25, Otigrovka25Text%A_index%
+IniWrite, % Otigrovka25Wait%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile3\setting_1tab.ini, Otigrovka25, Otigrovka25Wait%A_index%
+IniWrite, % Otigrovka25SendType%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile3\setting_1tab.ini, Otigrovka25, Otigrovka25SendType%A_index%
     }
 }
     Gui, Otigrovka25: Destroy
@@ -1105,27 +1104,27 @@ if ProfileNumber = Профиль 1
     {
 Loop, 10
     {
-IniWrite, % Otigrovka26Text%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile1\setting_1tab.ini, Setup, Otigrovka26Text%A_index%
-IniWrite, % Otigrovka26Wait%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile1\setting_1tab.ini, Setup, Otigrovka26Wait%A_index%
-IniWrite, % Otigrovka26SendType%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile1\setting_1tab.ini, Setup, Otigrovka26SendType%A_index%
+IniWrite, % Otigrovka26Text%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile1\setting_1tab.ini, Otigrovka26, Otigrovka26Text%A_index%
+IniWrite, % Otigrovka26Wait%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile1\setting_1tab.ini, Otigrovka26, Otigrovka26Wait%A_index%
+IniWrite, % Otigrovka26SendType%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile1\setting_1tab.ini, Otigrovka26, Otigrovka26SendType%A_index%
     }
 }
 if ProfileNumber = Профиль 2
     {
 Loop, 10
     {
-IniWrite, % Otigrovka26Text%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile2\setting_1tab.ini, Setup, Otigrovka26Text%A_index%
-IniWrite, % Otigrovka26Wait%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile2\setting_1tab.ini, Setup, Otigrovka26Wait%A_index%
-IniWrite, % Otigrovka26SendType%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile2\setting_1tab.ini, Setup, Otigrovka26SendType%A_index%
+IniWrite, % Otigrovka26Text%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile2\setting_1tab.ini, Otigrovka26, Otigrovka26Text%A_index%
+IniWrite, % Otigrovka26Wait%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile2\setting_1tab.ini, Otigrovka26, Otigrovka26Wait%A_index%
+IniWrite, % Otigrovka26SendType%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile2\setting_1tab.ini, Otigrovka26, Otigrovka26SendType%A_index%
     }
 }
 if ProfileNumber = Профиль 3
     {
 Loop, 10
     {
-IniWrite, % Otigrovka26Text%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile3\setting_1tab.ini, Setup, Otigrovka26Text%A_index%
-IniWrite, % Otigrovka26Wait%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile3\setting_1tab.ini, Setup, Otigrovka26Wait%A_index%
-IniWrite, % Otigrovka26SendType%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile3\setting_1tab.ini, Setup, Otigrovka26SendType%A_index%
+IniWrite, % Otigrovka26Text%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile3\setting_1tab.ini, Otigrovka26, Otigrovka26Text%A_index%
+IniWrite, % Otigrovka26Wait%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile3\setting_1tab.ini, Otigrovka26, Otigrovka26Wait%A_index%
+IniWrite, % Otigrovka26SendType%A_index%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile3\setting_1tab.ini, Otigrovka26, Otigrovka26SendType%A_index%
     }
 }
     Gui, Otigrovka26: Destroy
@@ -1322,27 +1321,251 @@ IfMsgBox OK
   }
 
   ~!LButton::
+  Gui, Submit, NoHide
+  GuiControlGet, ProfileNumber
+GuiControlGet, ProfileFaction
+
+GuiControl,, ProfileNumber, %ProfileNumber%
+GuiControl,, ProfileFaction, %ProfileFaction%
+
 if cbgud1 = 1
   {
   repsett := 1
   MouseGetPos, xpos1, ypos1
   GuiControl,, xpos1, %xpos1%
   GuiControl,, ypos1, %ypos1%
-  if ProfileNumber = Профиль 1
+  if ProfileNumberNum = Profile1
     {
-  IniWrite, %xpos1%, %A_ScriptDir%\Factions\%ProfileFaction%\Profile1\setting.ini, Position, xpos1
-  IniWrite, %ypos1%, %A_ScriptDir%\Factions\%ProfileFaction%\Profile1\setting.ini, Position, ypos1
+  IniWrite, %xpos1%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile1\setting.ini, Position, xpos1
+  IniWrite, %ypos1%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile1\setting.ini, Position, ypos1
     }
-  if ProfileNumber = Профиль 2
+  if ProfileNumberNum = Profile2
+{
+    IniWrite, %xpos1%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile2\setting.ini, Position, xpos1
+    IniWrite, %ypos1%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile2\setting.ini, Position, ypos1
+      }
+  if ProfileNumberNum = Profile3
     {
-  IniWrite, %xpos1%, %A_ScriptDir%\Factions\%ProfileFaction%\Profile2\setting.ini, Position, xpos1
-  IniWrite, %ypos1%, %A_ScriptDir%\Factions\%ProfileFaction%\Profile2\setting.ini, Position, ypos1
-    }
-  if ProfileNumber = Профиль 3
-    {
-  IniWrite, %xpos1%, %A_ScriptDir%\Factions\%ProfileFaction%\Profile3\setting.ini, Position, xpos1
-  IniWrite, %ypos1%, %A_ScriptDir%\Factions\%ProfileFaction%\Profile3\setting.ini, Position, ypos1
-    }
+        IniWrite, %xpos1%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile3\setting.ini, Position, xpos1
+        IniWrite, %ypos1%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile3\setting.ini, Position, ypos1
+          }
   Gosub, GuiPodskazka
+
+
   }
+Return
+
+CompSettings:
+Gui, Submit, NoHide
+CompileFileSett = %A_Desktop%\%ProfileNumberNum%_%ProfileFactionNum%_Compiled.ini
+
+IniWrite, %ProfileNumber%, %CompileFileSett%, Profile, ProfileNumber
+IniWrite, %ProfileNumberNum%, %CompileFileSett%, Profile, ProfileNumberNum
+IniWrite, %ProfilePosled%, %CompileFileSett%, Profile, ProfilePosled
+
+IniWrite, %ProfileFaction%, %CompileFileSett%, Profile, ProfileFaction
+IniWrite, %ProfileFactionNum%, %CompileFileSett%, Profile, ProfileFactionNum
+IniWrite, %PosledFaction%, %CompileFileSett%, Profile, PosledFaction
+
+;======================================================================================
+{
+    Key_LoopInf := 1
+    Key_Staff := 1
+    Key_StopMake := 1
+Loop
+    {
+
+    
+IniWrite, % Otigrovka%Key_LoopInf%Text%Key_Staff%, %CompileFileSett%, Otigrovka%Key_LoopInf%, Otigrovka%Key_LoopInf%Text%Key_Staff%
+IniWrite, % Otigrovka%Key_LoopInf%Wait%Key_Staff%, %CompileFileSett%, Otigrovka%Key_LoopInf%, Otigrovka%Key_LoopInf%Wait%Key_Staff%
+IniWrite, % Otigrovka%Key_LoopInf%SendType%Key_Staff%, %CompileFileSett%, Otigrovka%Key_LoopInf%, Otigrovka%Key_LoopInf%SendType%Key_Staff%
+    
+
+Key_Staff := Key_Staff + 1
+
+GuiControl,, Key_LoopInf, %Key_LoopInf%
+GuiControl,, Key_Staff, %Key_Staff%
+
+if Key_Staff > 10
+    {
+        Key_Staff := 1
+        Key_LoopInf := Key_LoopInf + 1
+    }
+
+if Key_LoopInf > 26
+    {
+        Break
+    }
+
+if Key_StopMake > 27
+    {
+        Break
+    }
+}
+}
+
+;======================================================================================
+Loop, 13
+    {
+    IniWrite, % OwnHotKey%A_index%, %CompileFileSett%, Buttons, OwnHotKey%A_index%
+    IniWrite, % OwnPrimech%A_index%, %CompileFileSett%, Buttons, OwnPrimech%A_index%
+    
+    IniWrite, % HotCommand%A_index%, %CompileFileSett%, Buttons, HotCommand%A_index%
+    IniWrite, % HotPrimechanie%A_index%, %CompileFileSett%, Buttons, HotPrimechanie%A_index%
+    }
+    IniWrite, %HotKeyStop%, %CompileFileSett%, Buttons, HotKeyStop
+    IniWrite, %Check1%, %CompileFileSett%, Buttons, Check1
+Return
+
+UnCompSettings:
+Gui, Own: Hide
+WM_DROPFILES := 0x233, WS_EX_ACCEPTFILES := 0x10
+
+;Gui, UnC: +AlwaysOnTop
+;Gui, UnC: Margin, 10, 10
+Gui, UnC: Font, s12 q5, calibri
+Gui, UnC: Add, Text, y20 h70 Border +E%WS_EX_ACCEPTFILES%, % "   ↓ Перетащите сюда файлы ↓   "
+OnMessage(0x233, "WM_DROPFILES")
+Gui, UnC: Show, , Распаковать файл настроек
+Return
+
+UnCGuiClose:
+UnCGuiEscape:
+    Gui, UnC: Destroy
+   Gui, Own: Show
+
+WM_DROPFILES(hDrop)  {
+   countFiles := DllCall("Shell32\DragQueryFile", Ptr, hDrop, UInt, 0xFFFFFFFF, Ptr, 0, UInt, 0)
+   Loop % countFiles  {
+      size := DllCall("Shell32\DragQueryFile", Ptr, hDrop, UInt, A_Index - 1, Ptr, 0, UInt, 0)
+      VarSetCapacity(buff, size + 1, 0)
+      DllCall("Shell32\DragQueryFile", Ptr, hDrop, UInt, A_Index - 1, Ptr, &buff, UInt, size + 1)
+      fileNames .= (fileNames = "" ? "" : "`r`n") . StrGet(&buff, "CP0")
+   }
+   DllCall("Shell32\DragFinish", Ptr, hDrop)
+   timer := Func("ShowFileNames").Bind(fileNames)
+   SetTimer, % timer, -10
+}
+
+ShowFileNames(fileNames)  {
+    MsgBox, , Информация, Файл для декомпиляции обнаружен!`nНажмите OK для продолжения.
+
+   IniRead, ProfileNumber, %fileNames%, Profile, ProfileNumber, %A_Space%
+   IniRead, ProfileNumberNum, %fileNames%, Profile, ProfileNumberNum, %A_Space%
+   IniRead, ProfilePosled, %fileNames%, Profile, ProfilePosled, %A_Space%
+   IniRead, ProfileFaction, %fileNames%, Profile, ProfileFaction, %A_Space%
+   IniRead, ProfileFactionNum, %fileNames%, Profile, ProfileFactionNum, %A_Space%
+   IniRead, PosledFaction, %fileNames%, Profile, PosledFaction, %A_Space%
+
+
+   {
+      KeySounter1 = 0
+      KeySounter2 = 1
+      KeySounter = 1
+  Loop
+      {
+          KeySounter1 := KeySounter1 + 1
+          KeySounter2 := KeySounter2 + 1
+      IniRead, Otigrovka%KeySounter%Text%KeySounter2%, %fileNames%, Otigrovka%KeySounter%, Otigrovka%KeySounter%Text%KeySounter2%, %A_Space%
+      IniRead, Otigrovka%KeySounter%Wait%KeySounter2%, %fileNames%, Otigrovka%KeySounter%, Otigrovka%KeySounter%Wait%KeySounter2%, 1400
+      IniRead, Otigrovka%KeySounter%SendType%KeySounter2%, %fileNames%, Otigrovka%KeySounter%, Otigrovka%KeySounter%SendType%KeySounter2%, %A_Space%
+      if KeySounter1 = 10
+          {
+              KeySounter := KeySounter + 1 
+              KeySounter1 := 0
+              GuiControl,, KeySounter, %KeySounter%
+          }
+      if KeySounter2 = 10
+          {
+              KeySounter2 := 0
+          }
+      if KeySounter = 27
+          {
+          Break
+          }
+      }
+}
+
+IniRead, PosledFaction, %fileNames%, Profile, PosledFaction, %A_Space%
+
+Loop, 13
+   {
+      IniRead, OwnHotKey%A_index%, %fileNames%, Buttons, OwnHotKey%A_index%
+      IniRead, OwnPrimech%A_index%, %fileNames%, Buttons, OwnPrimech%A_index%
+   
+      IniRead, HotCommand%A_index%, %fileNames%, Buttons, HotCommand%A_index%
+      IniRead, HotPrimechanie%A_index%, %fileNames%, Buttons, HotPrimechanie%A_index%
+   }
+   IniRead, HotKeyStop, %fileNames%, Buttons, HotKeyStop
+   IniRead, Check1, %fileNames%, Buttons, Check1
+
+;====================================================================================================================================================================================
+
+CompileFileSett = %A_ScriptDir%\%ProfileNumberNum%_%ProfileFactionNum%_UNCompiled.ini
+CompileFileSett2 = %A_ScriptDir%\Factions\%ProfileFactionNum%\%ProfileNumberNum%\setting.ini
+CompileFileSett3 = %A_ScriptDir%\Factions\%ProfileFactionNum%\%ProfileNumberNum%\setting_1tab.ini
+CompileFileSett4 = %A_ScriptDir%\VarChoise.ini
+
+Gui, Submit, NoHide
+
+IniWrite, %ProfileNumber%, %CompileFileSett4%, Setup, ProfileNumber
+IniWrite, %ProfileNumberNum%, %CompileFileSett4%, Setup, ProfileNumberNum
+IniWrite, %ProfilePosled%, %CompileFileSett4%, Setup, ProfilePosled
+
+IniWrite, %ProfileFaction%, %CompileFileSett4%, Setup, ProfileFaction
+IniWrite, %ProfileFactionNum%, %CompileFileSett4%, Setup, ProfileFactionNum
+IniWrite, %PosledFaction%, %CompileFileSett4%, Setup, PosledFaction
+
+;======================================================================================
+{
+    Key_LoopInf := 1
+    Key_Staff := 1
+    Key_StopMake := 1
+Loop
+    {
+
+    
+IniWrite, % Otigrovka%Key_LoopInf%Text%Key_Staff%, %CompileFileSett3%, Otigrovka%Key_LoopInf%, Otigrovka%Key_LoopInf%Text%Key_Staff%
+IniWrite, % Otigrovka%Key_LoopInf%Wait%Key_Staff%, %CompileFileSett3%, Otigrovka%Key_LoopInf%, Otigrovka%Key_LoopInf%Wait%Key_Staff%
+IniWrite, % Otigrovka%Key_LoopInf%SendType%Key_Staff%, %CompileFileSett3%, Otigrovka%Key_LoopInf%, Otigrovka%Key_LoopInf%SendType%Key_Staff%
+    
+
+Key_Staff := Key_Staff + 1
+
+GuiControl,, Key_LoopInf, %Key_LoopInf%
+GuiControl,, Key_Staff, %Key_Staff%
+
+if Key_Staff > 10
+    {
+        Key_Staff := 1
+        Key_LoopInf := Key_LoopInf + 1
+    }
+
+if Key_LoopInf > 26
+    {
+        Break
+    }
+
+if Key_StopMake > 27
+    {
+        Break
+    }
+}
+}
+
+;======================================================================================
+Loop, 13
+    {
+    IniWrite, % OwnHotKey%A_index%, %CompileFileSett2%, Setup, OwnHotKey%A_index%
+    IniWrite, % OwnPrimech%A_index%, %CompileFileSett2%, Setup, OwnPrimech%A_index%
+    
+    IniWrite, % HotCommand%A_index%, %CompileFileSett2%, Setup, HotCommand%A_index%
+    IniWrite, % HotPrimechanie%A_index%, %CompileFileSett2%, Setup, HotPrimechanie%A_index%
+    }
+    IniWrite, %HotKeyStop%, %CompileFileSett2%, Setup, HotKeyStop
+    IniWrite, %Check1%, %CompileFileSett2%, Setup, Check1
+
+    
+Gosub, AllReadFile
+}
 Return
