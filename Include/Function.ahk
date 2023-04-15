@@ -224,7 +224,7 @@ Return
 
 SaveSetHUD2:
 Gui, Submit, NoHide
-if ProfileNumber = Профиль 1
+if ProfileNumberNum = Profile1
     {
 Loop, 3
 {
@@ -234,10 +234,9 @@ Loop, 3
 }
 IniWrite, %FonSett2%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile1\setting.ini, Position, FonSett2
 IniWrite, %MySliderFont2%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile1\setting.ini, Position, MySliderFont2
-Gui, Submit, NoHide
 IniWrite, %Check2%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile1\setting.ini, Setup, Check2
     }
-if ProfileNumber = Профиль 2
+if ProfileNumberNum = Profile2
     {
 Loop, 3
 {
@@ -247,11 +246,10 @@ Loop, 3
 }
 IniWrite, %FonSett2%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile2\setting.ini, Position, FonSett2
 IniWrite, %MySliderFont2%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile2\setting.ini, Position, MySliderFont2
-Gui, Submit, NoHide
 IniWrite, %Check2%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile2\setting.ini, Setup, Check2
     }
 
-if ProfileNumber = Профиль 3
+if ProfileNumberNum = Profile3
     {
 Loop, 3
 {
@@ -261,7 +259,7 @@ Loop, 3
 }
 IniWrite, %FonSett2%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile3\setting.ini, Position, FonSett2
 IniWrite, %MySliderFont2%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile3\setting.ini, Position, MySliderFont2
-Gui, Submit, NoHide
+
 IniWrite, %Check2%, %A_ScriptDir%\Factions\%ProfileFactionNum%\Profile3\setting.ini, Setup, Check2
     }
 Gui, 3b: Destroy
