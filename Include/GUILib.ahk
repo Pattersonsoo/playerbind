@@ -110,6 +110,9 @@ Gui, Own: Add, GroupBox, x230 y20 w220 h40
 Gui, Own: Add, Checkbox, x236 y30 h23 vCheck1 Checked%Check1%, Отображать подсказки
 Gui, Own: Add, Button, x380 y31 h23 gPeremove2, Настроить
 
+Gui, Own: Add, GroupBox, x460 y20 w150 h40
+Gui, Own: Add, Button, x465 y31 w140 h23 gSettingFPS, Настроить задержку
+
 Gui, Own: Add, Button, x8 y330 w119 h28 gCompSettings, Компилировать настройки
 Gui, Own: Add, Button, x128 y330 w119 h28 gUnCompSettings, Распаковать настройки
 Gui, Own: Tab
@@ -1441,3 +1444,26 @@ HUD2GuiClose:
     Gui, HUD2: Destroy
     Gui, Own: Show
 return
+
+SettingFPS:
+Gui, Own: Hide
+Gui, FPS: Add, Button, x64 y61 w80 h23 gFPSCountSave, Сохранить
+Gui, FPS: Add, Radio, gSettCountFPS x8 y32 w68 h23 vFPSCountT1 Checked%FPSCountT1%, <30 FPS
+Gui, FPS: Add, Radio, gSettCountFPS x80 y32 w75 h23 vFPSCountT2 Checked%FPSCountT2%, 30-60 FPS
+Gui, FPS: Add, Radio, gSettCountFPS x160 y32 w57 h23 vFPSCountT3 Checked%FPSCountT3%, 60> FPS
+Gui, FPS: Add, Text, x0 y0 w234 h23 +0x200 +Center, Выберите вашу среднюю частоту кадров
+Gui, FPS: Add, GroupBox, x4 y20 w222 h39
+
+Gui, FPS: Show, w229 h87, Настройка задержки связанной с FPS
+Return
+
+FPSGuiEscape:
+FPSGuiClose:
+Gui, FPS: Destroy
+Gui, Own: Show
+return
+
+FPSCountSave:
+Gui, FPS: Destroy
+Gui, Own: Show
+Return
