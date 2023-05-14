@@ -2,7 +2,6 @@
 CompileFileSett2 = %A_ScriptDir%\Factions\%ProfileFactionNum%\%ProfileNumberNum%\setting.ini
 CompileFileSett3 = %A_ScriptDir%\Factions\%ProfileFactionNum%\%ProfileNumberNum%\setting_1tab.ini
 CompileFileSett4 = %A_ScriptDir%\VarChoise.ini
-
 Return
 
 ;IniWrite, %WaitFPSCounter%, %CompileFileSett2%, FPS, WaitFPSCounter 
@@ -1522,8 +1521,11 @@ Loop, 13
    IniRead, Check1, %fileNames%, Buttons, Check1
 
 ;====================================================================================================================================================================================
-
 Gui, Submit, NoHide
+CompileFileSett = %A_ScriptDir%\%ProfileNumberNum%_%ProfileFactionNum%_UNCompiled.ini
+CompileFileSett2 = %A_ScriptDir%\Factions\%ProfileFactionNum%\%ProfileNumberNum%\setting.ini
+CompileFileSett3 = %A_ScriptDir%\Factions\%ProfileFactionNum%\%ProfileNumberNum%\setting_1tab.ini
+CompileFileSett4 = %A_ScriptDir%\VarChoise.ini
 
 IniWrite, %ProfileNumber%, %CompileFileSett4%, Setup, ProfileNumber
 IniWrite, %ProfileNumberNum%, %CompileFileSett4%, Setup, ProfileNumberNum
@@ -1583,7 +1585,7 @@ Loop, 13
     IniWrite, %Check1%, %CompileFileSett2%, Setup, Check1
 
     
-Gosub, AllReadFile
+Reload
 }
 Return
 
